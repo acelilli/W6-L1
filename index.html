@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="text-center">Pratica con il grid system</h1>
+    <h2 class="text-center">Esercizio 1</h2>
+    <div class="container-fluid mx-auto">
+      <!--Qui il contentiore-->
+      <div class="row align-items-start">
+        <!--Questa la row-->
+        <div class="col-4">
+          <!--colonna con larghezza 4/12-->
+          <div class="bg-primary text-white p-3 border border-dark">Colonna 1</div>
+        </div>
+        <div class="col-4">
+          <div class="bg-primary text-white p-3 border border-dark">Colonna 2</div>
+        </div>
+        <div class="col-4">
+          <div class="bg-primary text-white p-3 border border-dark">Colonna 3</div>
+        </div>
+      </div>
+      <!------------------------------------------------------------>
+      <h2 class="text-center">Esercizio 2</h2>
+      <div class="container-fluid mx-auto">
+        <!--Fluid rimane una width del 100% su tutti i breakpoint-->
+        <div class="row align-items-start">
+          <!--Questa la row-->
+          <div class="col-md-4">
+            <!--colonna con larghezza 4/12, in cui, grazie alla specifica md (larghezza schermo inferiore a md = dispositivi mobili e tablet) allora si mettono in colonna!!-->
+            <div class="bg-warning text-black p-3 border border-dark">Colonna 1</div>
+          </div>
+          <div class="col-md-4">
+            <div class="bg-warning text-black p-3 border border-dark">Colonna 2</div>
+          </div>
+          <div class="col-md-4">
+            <div class="bg-warning text-black p-3 border border-dark">Colonna 3</div>
+          </div>
+        </div>
+        <!---Per i primi due esercizi ho usato dei div contenitori all'interno della griglia (perché mi ricordavo di non dover lavorare direttamente sugli elementi della griglia) tuttavia dal 3 in poi, per non rare confusione, ho operato direttamente sulle griglieb--->
+        <h2 class="text-center">Esercizio 3</h2>
+        <div class="container-fluid mx-auto">
+          <!------------------GRIGLIA PER MOBILE--------->
+          <div class="row align-items-start">
+            <!--Questa la row-->
+            <div class="col-sm-12 bg-success text-white p-3 border border-dark">Colonna 1 griglia 1</div>
+            <div class="col-sm-12 bg-success text-white p-3 border border-dark">Colonna 2 griglia 1</div>
+            <div class="col-sm-12 bg-success text-white p-3 border border-dark">Colonna 3 griglia 1</div>
+          </div>
+          <!-------GLIGLIA PE DISPOSITIVI MEDI--------------->
+          <div class="row align-items-start">
+            <!--Questa la row-->
+            <div class="col-md-4 bg-success text-white p-3 border border-dark">Colonna 1 griglia 2</div>
+            <div class="col-md-4 bg-success text-white p-3 border border-dark">Colonna 2 griglia 2</div>
+            <div class="col-md-4 bg-success text-white p-3 border border-dark">Colonna 3 griglia 2</div>
+          </div>
+          <!-------GLIGLIA PE DISPOSITIVI GRANDI--------------->
+          <div class="row align-items-start">
+            <!--Questa la row-->
+            <div class="col-lg-4 bg-success text-white p-3 border border-dark">Colonna 1 griglia 3</div>
+            <div class="col-lg-4 bg-success text-white p-3 border border-dark">Colonna 2 griglia 3</div>
+            <div class="col-lg-4 bg-success text-white p-3 border border-dark">Colonna 3 griglia 3</div>
+          </div>
+          <!-------GLIGLIA PER DISPOSITIVI XL--------------->
+          <div class="row align-items-start">
+            <!--Questa la row-->
+            <div class="col-xl-4 bg-success text-white p-3 border border-dark">Colonna 1 griglia 3</div>
+            <div class="col-xl-4 bg-success text-white p-3 border border-dark">Colonna 2 griglia 3</div>
+            <div class="col-xl-4 bg-success text-white p-3 border border-dark">Colonna 3 griglia 3</div>
+          </div>
+        </div>
+        <!------------------------------------------------------------>
+        <h2 class="text-center">Esercizio 4</h2>
+        <div class="container-fluid">
+          <div class="row align-items-start">
+            <div class="col-3 bg-danger text-black p-3 border border-dark">Colonna 1</div>
+          <div class="col-6 bg-danger text-black p-3 border border-dark">Colonna 2</div>
+        <div class="col-3 bg-danger text-black p-3 border border-dark">Colonna 3</div>
+        </div>
+      </div>
+    <!------------------------------------------------------------>
+    <h2 class="text-center">Esercizio 5</h2>
+    <div class="container-fluid">
+      <div class="row align-items-start">
+        <div class="col-md-4 bg-info text-white p-3 border border-dark">Colonna 1</div>
+        <div class="col-md-8 bg-info text-white p-3 border border-dark row justify-items-center">
+          <div class="col-md-6 bg-secondary p-3 border border-dark">Colonna 2 interno 1</div>
+          <div class="col-md-6 bg-secondary p-3 border border-dark">Colonna 2 interno 2</div>
+        </div>
+    </div>
+  </div>
+    <!------------------------------------------------------------>
+    <h2 class="text-center">Esercizio 6</h2>
+    <div class="container-fluid mx-auto">
+      <!--Qui il contentiore-->
+      <div class="row align-items-start">
+        <!--Questa la row-->
+        <div class="col-5 bg-dark text-white p-3 border border-dark">
+            Colonna 1
+        </div>
+        <div class="col-5 offset-2 bg-dark text-white p-3 border border-dark">Colonna 2
+        </div>
+      </div>
+
+    <!--------------------------FINE---------------------------------->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
